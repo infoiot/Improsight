@@ -317,7 +317,7 @@ d2 = datetime.datetime(year,mon,day)
 #decrypt(file,key)
 #decrypt(file1,key)
 if d1 >= d2 :
-    file=open('path.txt',"r")
+    file=open('/home/infoa/Dockertest/path.txt',"r")
     fc=file.read()
     file.close()
     #print("Reading File Path",fc)
