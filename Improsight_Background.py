@@ -11,10 +11,10 @@ import os
 import datetime
 from cryptography.fernet import Fernet
 
-file1="Imp_yolov4.cfg"
-file2="Imp_yolov4_best.weights"
-file3="C:\\Users\\Dell\\Documents\\infoa_python\\Dockertest\\Imp_yolov4.cfg"
-file4="C:\\Users\\Dell\\Documents\\infoa_python\\Dockertest\\Imp_yolov4_best.weights"
+file1="/home/infoa/Dockertest/Imp_yolov4.cfg"
+file2="/home/infoa/Dockertest/Imp_yolov4_best.weights"
+file3="/home/infoa/Dockertest/Imp_yolov4.cfg"
+file4="/home/infoa/Dockertest/Imp_yolov4_best.weights"
 #key=b'8cK5ftacBWd5JqU7b3jzS1BRs_20NDULinOtPWjfKvQ='
 key=b'8cK5ftacBWd5JqU7b3jzS1BRs_20NDULinOtPWjfKvQ='
 #b'8cK5ftacBWd5JqU7b3jzS1BRs_20NDULinOtPWjfKvQ='
