@@ -159,8 +159,8 @@ def analyse():
                         os.remove(fn)
                         os.remove(file3)
                         os.remove(file4)
-                    except:
-                        print('Exception in reading File')
+                    except Exception as e:
+                        print(e)
                 else:
                     print('File Content not proper')
         else:
