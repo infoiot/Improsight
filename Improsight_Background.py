@@ -4,7 +4,7 @@ import threading
 import os
 import datetime
 file3="C:\\Users\\Dell\\Documents\\infoa_python\\Dockertest\\Imp_yolov4.cfg"
-file4="E:\\Python\\Imp_yolov4_best.weights"
+file4="C:\\Users\\Dell\\Documents\\infoa_python\\Dockertest\\Imp_yolov4_best.weights"
 for folder, subs, files in os.walk("C:\\Users\\Dell\\Documents\\infoa_python\\Dockertest\\IMG\\IMPROSIGHT\\"):
     file_paths = []
     for filename in files:
