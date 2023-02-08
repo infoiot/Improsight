@@ -107,8 +107,8 @@ for folder, subs, files in os.walk("C:\\Users\\Dell\\Documents\\infoa_python\\Do
                         #os.remove(fn)
                         #os.remove(file3)
                         #os.remove(file4)
-                        #file_22 = open("C:\\Users\\Dell\\Documents\\infoa_python\\Dockertest\\res.txt", "w") 
-                        file_22 = open("res.txt", "w") 
+                        file_22 = open("C:\\Users\\Dell\\Documents\\infoa_python\\Dockertest\\res.txt", "w") 
+                        #file_22 = open("res.txt", "w") 
                         file_22.write("Success")
                         file_22.close()
                     except Exception as e:
