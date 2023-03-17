@@ -56,7 +56,7 @@ for folder, subs, files in os.walk("C:\\Users\\Dell\\Documents\\infoa_python\\Do
                                 all_scores = object_detection[5:]
                                 predicted_class_id = np.argmax(all_scores)
                                 prediction_confidence = all_scores[predicted_class_id]
-                                if prediction_confidence > 0.5:
+                                if prediction_confidence > 0.0:
                                     predicted_class_label = class_labels[predicted_class_id]
                                     bounding_box = object_detection[0:4]*np.array([img_width,img_height,img_width,img_height])
                                     (cx,cy,w,h) = bounding_box.astype("int")
