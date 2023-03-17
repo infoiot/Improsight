@@ -27,9 +27,9 @@ for folder, subs, files in os.walk("C:\\Users\\Dell\\Documents\\infoa_python\\Do
                         
                         img_blob = cv2.dnn.blobFromImage(img,0.003922,(416,416),swapRB = True,crop = False)
                         #%% Labeling class
-                        class_labels = ["Gel","Particle","Fibre","Air Bubble"]
+                        class_labels = ["Gels"]
                         #%% color labeling
-                        class_colors = ["0,255,255","0,0,255","255,0,0","255,255,0"]
+                        class_colors = ["0,255,255"]
                         class_colors = [np.array(every_color.split(",")).astype("int") for every_color in class_colors]
                         class_colors = np.array(class_colors)
                         class_colors = np.tile(class_colors,(4,1))
@@ -86,7 +86,7 @@ for folder, subs, files in os.walk("C:\\Users\\Dell\\Documents\\infoa_python\\Do
                             box_color = [int(c) for c in box_color]
                             if predicted_class_label=="Fibre":
                                 fc =fc+1
-                            if predicted_class_label=="Gel":
+                            if predicted_class_label=="Gels":
                                 gc=gc+1
                             if predicted_class_label=="Air Bubble":
                                 abc=abc+1
