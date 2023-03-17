@@ -68,7 +68,7 @@ for folder, subs, files in os.walk("C:\\Users\\Dell\\Documents\\infoa_python\\Do
                         pc=0
                         abc=0
                         for max_valueid in max_value_ids:
-                            max_class_id = max_valueid[0]
+                            max_class_id = max_valueid
                             box = boxes_list[max_class_id]
                             x = box[0]
                             y = box[1]
