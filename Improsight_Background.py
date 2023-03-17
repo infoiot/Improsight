@@ -62,6 +62,9 @@ for folder, subs, files in os.walk("C:\\Users\\Dell\\Documents\\infoa_python\\Do
                                     (cx,cy,w,h) = bounding_box.astype("int")
                                     x = int(cx -w/2)
                                     y = int(cy-h/2)
+                                    class_ids_list.append(predicted_class_id)
+                                    confidences_list.append(float(prediction_confidence))
+                                    boxes_list.append([x, y, int(w), int(h)])
                             max_value_ids = cv2.dnn.NMSBoxes(boxes_list, confidences_list, 0.5, 0.4)
                             fc=0
                         gc=0
