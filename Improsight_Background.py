@@ -7,7 +7,7 @@ import datetime
 file3="Imp_yolov4.cfg"
 #file4="C:\\Users\\Dell\\Documents\\infoa_python\\Dockertest\\Imp_yolov4_best.weights"
 file4="Imp_yolov4_best.weights"
-for folder, subs, files in os.walk("C:\\Users\\Dell\\Documents\\infoa_python\\Dockertest\\IMG\\IMPROSIGHT\\"):
+for folder, subs, files in os.walk("E:\\infoa_python\\Dockertest\\IMG\\IMPROSIGHT\\"):
     file_paths = []
     for filename in files:
         file_paths.append(os.path.abspath(os.path.join(folder, filename)))
@@ -101,12 +101,12 @@ for folder, subs, files in os.walk("C:\\Users\\Dell\\Documents\\infoa_python\\Do
                             # draw rectangle and text in the image
                             cv2.rectangle(img, (x, y), (wx, hy), box_color, 1)
                             cv2.putText(img, predicted_class_label, (x, y-5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, box_color, 1)
-                        cv2.imwrite("C:\\Users\\Dell\\Documents\\infoa_python\\Dockertest\\IMG\\IMPROSIGHT\\{}_analysed.jpg".format(filename), img)
+                        cv2.imwrite("E:\\infoa_python\\Dockertest\\IMG\\IMPROSIGHT\\{}_analysed.jpg".format(filename), img)
                         print("Particle Count",pc)
                         print("Fibre Count",fc)
                         print("Gel Count",gc)
                         print("Air Bubble Count",abc)
-                        file = open('C:\\Users\\Dell\\Documents\\infoa_python\\Dockertest\\IMG\\IMPROSIGHT\\{}_rpt.txt'.format(filename),'w')
+                        file = open('E:\\infoa_python\\Dockertest\\IMG\\IMPROSIGHT\\{}_rpt.txt'.format(filename),'w')
                         file.write(str(pc)+"#"+str(fc)+"#"+str(gc)+"#"+str(abc))
                         file.close()
                         #os.remove(fn)
