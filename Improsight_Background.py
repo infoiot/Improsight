@@ -10,8 +10,8 @@ file4="Imp_yolov4_best.weights"
 with open('filepath.txt') as f:
         contents = f.read()
 file5 = contents.replace("/","\\")
-file6 = contents.replace("\",r"\\")
-print(file6)                        
+#file6 = contents.replace("\","\\")
+print(file5)                        
 for folder, subs, files in os.walk("E:\\infoa_python\\Dockertest\\IMG\\IMPROSIGHT\\"):
     file_paths = []
     for filename in files:
