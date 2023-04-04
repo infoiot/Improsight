@@ -111,7 +111,7 @@ for folder, subs, files in os.walk(file6):
                         print("Fibre Count",fc)
                         print("Gel Count",gc)
                         print("Air Bubble Count",abc)
-                        file = open(file6+'{}_rpt.txt'.format(filename),'w')
+                        file = open(file6+"{}_rpt.txt".format(filename),'w')
                         file.write(str(pc)+"#"+str(fc)+"#"+str(gc)+"#"+str(abc))
                         file.close()
                         #os.remove(fn)
