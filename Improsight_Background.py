@@ -7,6 +7,10 @@ import datetime
 file3="Imp_yolov4.cfg"
 #file4="C:\\Users\\Dell\\Documents\\infoa_python\\Dockertest\\Imp_yolov4_best.weights"
 file4="Imp_yolov4_best.weights"
+with open('filepath.txt') as f:
+        contents = f.read()
+file5 = contents.replace("/","\\")
+file6 = contents.replace("\","\\")
 for folder, subs, files in os.walk("E:\\infoa_python\\Dockertest\\IMG\\IMPROSIGHT\\"):
     file_paths = []
     for filename in files:
