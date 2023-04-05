@@ -70,8 +70,8 @@ for folder, subs, files in os.walk(file6):
                                     class_ids_list.append(predicted_class_id)
                                     confidences_list.append(float(prediction_confidence))
                                     boxes_list.append([x, y, int(w), int(h)])
-                            max_value_ids = cv2.dnn.NMSBoxes(boxes_list, confidences_list, 0.5, 0.4)
-                            fc=0
+                        max_value_ids = cv2.dnn.NMSBoxes(boxes_list, confidences_list, 0.5, 0.4)
+                        fc=0
                         gc=0
                         pc=0
                         abc=0
